@@ -3,8 +3,7 @@ This project is a password manager that has been developed using Python as the p
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-.. image:: https://img.shields.io/pypi/v/bit.svg?style=flat-square
-    :target: https://pypi.org/project/bit
+!\[alt text\](path or URL to image)
 
 ## Intro
 The password manager aims to securely store sensitive login details and passwords for various online accounts, ensuring users no longer need to remember multiple complex passwords. With this project, users can conveniently save, retrieve, and update their login information within a well-organized interface.
