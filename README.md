@@ -23,6 +23,9 @@ This project is written in Python programming language and no other language is 
 All the codes of this project are in the main.py file
 Note: This project contains three text files, one for verifying user registration and one for saving the program password
 and another one to store accounts and passwords of user accounts
+### Watch videos of this project on YouTube
+<img alt="Static Badge" src="https://img.shields.io/badge/mojtaba%20golab-white?logo=youtube&logoColor=red">
+
 ## Installation
 ### Libraries used
 #### cryptography
