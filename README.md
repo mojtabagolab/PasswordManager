@@ -9,7 +9,7 @@ The user interface, designed with tkinter library, provides a clean and user-fri
 ## Installation
 ### Libraries used
 #### cryptography
-```python
+```bash
 pip install cryptography
 ```
 #### tkinter
@@ -21,7 +21,16 @@ pip install tk
 pip install Pillow
 ```
 ### How to import libraries
-
+```python
+#import user interface package
+from tkinter import *
+#import package for use image in project
+from PIL import ImageTk , Image #(pillow)
+#alertDialog
+from tkinter import messagebox
+#import the encryption and decryption package
+from cryptography.fernet import Fernet
+```
 
 
 # Join our Community:
