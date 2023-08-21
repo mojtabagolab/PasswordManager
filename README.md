@@ -51,7 +51,13 @@ from tkinter import messagebox
 #import the encryption and decryption package
 from cryptography.fernet import Fernet
 ```
-
+## Preview
+<p align="center">
+  <img src="ProjectFile/logo.jpg" />
+  <img src="ProjectFile/logo.jpg" />
+  <img src="ProjectFile/logo.jpg" />
+  <img src="ProjectFile/logo.jpg" />
+</p>
 
 # Join our Community:
   <a href="https://www.youtube.com/channel/UC_S-8rbb5mkflavd4kzHdzg">
