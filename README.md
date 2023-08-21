@@ -24,7 +24,7 @@ All the codes of this project are in the main.py file
 Note: This project contains three text files, one for verifying user registration and one for saving the program password
 and another one to store accounts and passwords of user accounts
 ### Watch videos of this project on YouTube
-<img alt="Static Badge" src="https://img.shields.io/badge/mojtaba%20golab-white?logo=youtube&logoColor=red">
+<a href="https://www.youtube.com/channel/UC_S-8rbb5mkflavd4kzHdzg"><img src="https://img.shields.io/badge/mojtaba%20golab-white?logo=youtube&logoColor=red"></a>
 
 ## Installation
 ### Libraries used
