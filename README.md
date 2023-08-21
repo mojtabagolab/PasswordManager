@@ -9,7 +9,7 @@ The user interface, designed with tkinter library, provides a clean and user-fri
 ## Installation
 ### Libraries used
 #### cryptography
-```bash
+```python
 pip install cryptography
 ```
 #### tkinter
@@ -20,6 +20,8 @@ pip install tk
 ```bash
 pip install Pillow
 ```
+### How to import libraries
+
 
 
 # Join our Community:
