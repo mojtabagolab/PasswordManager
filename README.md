@@ -1,5 +1,6 @@
 # PasswordManager
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
 This project is a password manager that has been developed using Python as the primary programming language. It utilizes the tkinter library to create an intuitive user interface for enhanced user experience.
 ## Intro
 The password manager aims to securely store sensitive login details and passwords for various online accounts, ensuring users no longer need to remember multiple complex passwords. With this project, users can conveniently save, retrieve, and update their login information within a well-organized interface.
