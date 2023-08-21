@@ -53,10 +53,10 @@ from cryptography.fernet import Fernet
 ```
 ## Preview
 <p align="center">
-  <img src="ProjectFile/logo.jpg" />
-  <img src="ProjectFile/logo.jpg" />
-  <img src="ProjectFile/logo.jpg" />
-  <img src="ProjectFile/logo.jpg" />
+  <img src="Preview/signup.png" />
+  <img src="Preview/login.png" />
+  <img src="Preview/menu.png" />
+  <img src="Preview/addpass.png" />
 </p>
 
 # Join our Community:
