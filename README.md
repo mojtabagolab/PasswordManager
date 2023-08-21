@@ -9,4 +9,3 @@ This project is a password manager that has been developed using Python as the p
     <a href="https://www.instagram.com/geeky.ak/">
     <img width="80px" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" />
 
-<br>
