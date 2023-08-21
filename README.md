@@ -2,17 +2,16 @@
   <img src="ProjectFile/logo.jpg" />
 </p>
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
-<a href="https://pypi.org/project/tk/"><img src="https://img.shields.io/badge/pypi-Tk-blue"/></a>
-<a href="https://pypi.org/project/cryptography/"><img src="https://img.shields.io/badge/pypi-cryptography%2041.0.3-red.svg"/></a>
-<a href="https://pypi.org/project/Pillow/"><img src="https://img.shields.io/badge/pypi-Pillow%2010.0.0-green.svg"/></a>
-
 # PasswordManager
 This project is a password manager that has been developed using Python as the primary programming language. It utilizes the tkinter library to create an intuitive user interface for enhanced user experience.
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-
+<p align="center">
+  <a href="https://pypi.org/project/tk/"><img src="https://img.shields.io/badge/pypi-Tk-blue"/></a>
+  <a href="https://pypi.org/project/cryptography/"><img src="https://img.shields.io/badge/pypi-cryptography%2041.0.3-red.svg"/></a>
+  <a href="https://pypi.org/project/Pillow/"><img src="https://img.shields.io/badge/pypi-Pillow%2010.0.0-green.svg"/></a>
+</p>
 
 ## Intro
 The password manager aims to securely store sensitive login details and passwords for various online accounts, ensuring users no longer need to remember multiple complex passwords. With this project, users can conveniently save, retrieve, and update their login information within a well-organized interface.
