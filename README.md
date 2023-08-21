@@ -3,11 +3,8 @@ This project is a password manager that has been developed using Python as the p
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-{
-  "color": "blue",
-  "status": "$39,333.7",
-  "subject": "Bitcoin Price USD"
-}
+![Tk](https://img.shields.io/badge/tk 0.1.0-9cf.svg?style=for-the-badge&logo=python&logoColor)
+
 
 ## Intro
 The password manager aims to securely store sensitive login details and passwords for various online accounts, ensuring users no longer need to remember multiple complex passwords. With this project, users can conveniently save, retrieve, and update their login information within a well-organized interface.
