@@ -3,7 +3,7 @@ This project is a password manager that has been developed using Python as the p
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-![Tk](https://img.shields.io/badge/tk 0.1.0-9cf.svg?style=for-the-badge&logo=python&logoColor)
+https://img.shields.io/badge/tk 0.1.0-9cf.svg?style=for-the-badge&logo=python&logoColor
 
 
 ## Intro
