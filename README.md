@@ -8,7 +8,7 @@ This project is a password manager that has been developed using Python as the p
 
 
 <p align="center">
-  <a heref="https://www.python.org/"><img alt="Static Badge" src="https://img.shields.io/badge/python-blue?logo=python&logoColor=yellow"/></a>
+  <a heref="https://www.python.org/downloads/"><img alt="Static Badge" src="https://img.shields.io/badge/python-blue?logo=python&logoColor=yellow"/></a>
   <a href="https://pypi.org/project/tk/"><img src="https://img.shields.io/badge/pypi-Tk-blue"/></a>
   <a href="https://pypi.org/project/cryptography/"><img src="https://img.shields.io/badge/pypi-cryptography%2041.0.3-red.svg"/></a>
   <a href="https://pypi.org/project/Pillow/"><img src="https://img.shields.io/badge/pypi-Pillow%2010.0.0-green.svg"/></a>
