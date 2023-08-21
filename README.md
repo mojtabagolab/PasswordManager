@@ -10,7 +10,7 @@ This project is a password manager that has been developed using Python as the p
 <p align="center">
   ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
   
-  <a href="https://pypi.org/project/tk/"><img alt="Python" src="https://img.shields.io/badge/pypi-Pillow%2010.0.0-green.svg"/></a>
+  <a href="https://pypi.org/project/tk/"><img alt="python" src="https://img.shields.io/badge/green.svg"/></a>
   
   <a href="https://pypi.org/project/tk/"><img src="https://img.shields.io/badge/pypi-Tk-blue"/></a>
   <a href="https://pypi.org/project/cryptography/"><img src="https://img.shields.io/badge/pypi-cryptography%2041.0.3-red.svg"/></a>
