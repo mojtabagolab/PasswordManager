@@ -6,6 +6,20 @@ The password manager aims to securely store sensitive login details and password
 Python's robustness allows for implementing strong encryption algorithms that guarantee the confidentiality and integrity of stored passwords. Users can rely on this password manager to safeguard their sensitive information effectively.
 
 The user interface, designed with tkinter library, provides a clean and user-friendly environment to interact with the password manager. It offers easy-to-use features like input fields for adding new passwords, viewing stored passwords.
+## Installation
+### Libraries used
+#### cryptography
+```bash
+pip install cryptography
+```
+#### tkinter
+```bash
+pip install tk
+```
+#### pillow
+```bash
+pip install Pillow
+```
 
 
 # Join our Community:
