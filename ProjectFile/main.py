@@ -18,10 +18,12 @@ def SignUp():
     Window_SignUp.config(bg= "#353535")
     Window_SignUp.geometry("800x500")
     Window_SignUp.resizable(False , False)
-    Window_SignUp.iconbitmap("iconApp.ico")
+    #enter your image.ico location with two \\
+    Window_SignUp.iconbitmap("E:\\project\\PasswordManager\\ProjectFile\\iconApp.ico")
     #---------------------------------------------------
     #image icon app in window
-    Passam_Image_Icon = Image.open("logo.jpg")
+    #enter your image.ico location with two \\
+    Passam_Image_Icon = Image.open("E:\\project\\PasswordManager\\ProjectFile\\logo.jpg")
     Passam_Image_Icon = Passam_Image_Icon.resize((320 , 210))
     Tk_Passam_Image = ImageTk.PhotoImage(Passam_Image_Icon)
     Passam_Image_Lable = Label(Window_SignUp ,image=Tk_Passam_Image )
