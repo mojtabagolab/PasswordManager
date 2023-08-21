@@ -5,8 +5,6 @@
 # PasswordManager
 This project is a password manager that has been developed using Python as the primary programming language. It utilizes the tkinter library to create an intuitive user interface for enhanced user experience.
 
-
-
 <p align="center">
   <a heref="https://www.python.org/downloads/"><img alt="Static Badge" src="https://img.shields.io/badge/python-blue?logo=python&logoColor=yellow"/></a>
   <a href="https://pypi.org/project/tk/"><img src="https://img.shields.io/badge/pypi-Tk-blue"/></a>
@@ -53,8 +51,8 @@ from cryptography.fernet import Fernet
 
 
 # Join our Community:
-<a href="https://t.me/mojagolab">
-    <img width="80px" src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" /></a>&ensp;&nbsp;&nbsp;
+  <a href="https://www.youtube.com/channel/UC_S-8rbb5mkflavd4kzHdzg">
+    <img width="80px" src="https://www.vectorlogo.zone/logos/youtube/youtube-icon.svg" /></a>&ensp;&nbsp;&nbsp;
     <a href="https://www.instagram.com/mojtabagolab1/">
     <img width="80px" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" />
 
