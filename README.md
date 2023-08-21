@@ -55,7 +55,7 @@ from cryptography.fernet import Fernet
 <p align="center">
   <img src="Preview/signup2.png" />
   <img src="Preview/login2.png" />
-  <img src="Preview/menu2.png" />
+  <img src="Preview/menu.png" />
   <img src="Preview/addpass2.png" />
 </p>
 
