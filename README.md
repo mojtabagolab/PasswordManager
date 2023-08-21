@@ -1,4 +1,8 @@
-[<img src="ProjectFile/logo.jpg" width="300">](logo.jpg) 
+
+
+<p align="center">
+  <img src="ProjectFile/logo.jpg" />
+</p>
 
 
 # PasswordManager
