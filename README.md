@@ -1,9 +1,10 @@
-<p align="center">
-  <img src="ProjectFile/logo.jpg" />
-</p>
 
 # PasswordManager
 This project is a password manager that has been developed using Python as the primary programming language. It utilizes the tkinter library to create an intuitive user interface for enhanced user experience.
+
+<p align="center">
+  <img src="ProjectFile/logo.jpg" />
+</p>
 
 <p align="center">
   <a heref="https://www.python.org/downloads/"><img alt="Static Badge" src="https://img.shields.io/badge/python-blue?logo=python&logoColor=yellow"/></a>
@@ -55,7 +56,7 @@ from cryptography.fernet import Fernet
 <p align="center">
   <img src="Preview/signup2.png" />
   <img src="Preview/login2.png" />
-  <img src="Preview/menu2.png" />
+  <img src="Preview/menu3.png" />
   <img src="Preview/addpass2.png" />
 </p>
 
