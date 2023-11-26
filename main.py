@@ -127,13 +127,27 @@ def Login():
     Password_Entry.configure(font=Password_Entry_Style)
     #---------------------------------------------------
     #function click button login
+    def get_login_enter_password():
+        #create a variable for get password from input password box
+        valueEditText = Password_Entry.get()
+        if valueEditText == "":
+            messagebox.showerror("Error" , "please enter password!") #alert dialog error
+        else:
+            #calling function for read App_Password file and load decrypt password 
+            Check_App_Password()
+            #check user passwrod for login 
+            if valueEditText == App_Password_Decrypt :
+                messagebox.showinfo("Success" , "Password is correct") ##alert dialog successfully login
+            else:
+                messagebox.showerror("Error" , "Password is wrong ") #alert dialog error login
+
     #---------------------------------------------------
     #Button login
-    Button_SignUp = Button(frame , text="Login" , width=20 , bg="green" , fg="white")
-    Button_SignUp.pack()
-    Button_SignUp.place(x=68 , y=180)
-    Button_SignUp_Style = ("Centaur" , 17 , "bold")
-    Button_SignUp.configure(font=Button_SignUp_Style)
+    Button_Login = Button(frame , text="Login" , width=20 , bg="green" , fg="white" , command=get_login_enter_password)
+    Button_Login.pack()
+    Button_Login.place(x=68 , y=180)
+    Button_Login_Style = ("Centaur" , 17 , "bold")
+    Button_Login.configure(font=Button_Login_Style)
     #---------------------------------------------------
     Window_Login.mainloop()
     #---------------------------------------------------
@@ -171,6 +185,16 @@ def Load_key_File():
     Key_File.close()
     #push the key in the global variable 
     fernet = Fernet(key) 
+#_________________________________________________________
+def Check_App_Password():
+    global App_Password_Decrypt
+    #read App_Password file for decrypt
+    File_App_Password = open('App_Password' , 'r')
+    File_App_Password = File_App_Password.read()
+    #decrypt user password 
+    Load_key_File()
+    App_Password_Decrypt = fernet.decrypt(File_App_Password.encode()).decode()
+    
 #_________________________________________________________
 
 
