@@ -154,7 +154,6 @@ def Login():
     #---------------------------------------------------
     Window_Login.mainloop()
     #---------------------------------------------------
-    
 
 #________________________________End login gui code_________________________________
 #________________________________Menu gui code_________________________________
@@ -189,7 +188,9 @@ def Menu():
     Add_Image = ImageTk.PhotoImage(Add_Image)
     #define a function to be called when the button is clicked
     def button_add_clicked():
-        pass
+        #close menu page and open add password page
+        Window_Menu.destroy()
+        Add()
     #create the button with the image
     Button_add = Button(Frame_Add ,image= Add_Image , command=button_add_clicked)
     Button_add.pack()
@@ -225,7 +226,8 @@ def Menu():
     View_Image = ImageTk.PhotoImage(View_Image)
     #define a function to be called when the button is clicked
     def button_view_clicked():
-        pass
+        Window_Menu.destroy()
+        Passwords()
     #create the button with the image
     Button_View = Button(Frame_View ,image= View_Image , command=button_view_clicked)
     Button_View.pack()
@@ -238,6 +240,187 @@ def Menu():
     Window_Menu.mainloop
     #---------------------------------------------------
 #________________________________End Menu gui code_________________________________
+#________________________________Add Password page gui code_________________________________
+def Add():
+    #---------------------------------------------------
+    #variable class Tk from tkinter lib
+    Window_Add = Tk()
+    #---------------------------------------------------
+    #customize window app
+    Window_Add.title("PASSAM (add password)")
+    Window_Add.config(bg= "#353535")
+    Window_Add.geometry("800x500")
+    Window_Add.resizable(False , False)
+    Window_Add.iconbitmap("iconApp.ico")
+    #---------------------------------------------------
+    #text Add password in header app
+    Text_Add_Password = Label(Window_Add , text="Add Password" , bg="#353535" , fg="white" , width=12)
+    Text_Add_Password.pack()
+    #Text_Welcome.place(x=220 , y=20)
+    Text_Add_Password_Style = ("Caveat" , 50 , "bold")
+    Text_Add_Password.configure(font=Text_Add_Password_Style)
+    #---------------------------------------------------
+    #image icon app in window
+    #enter your image.ico location with two \\
+    Passam_Image_Icon = Image.open("E:\\project\\PasswordManager\\logo4.jpg")
+    Passam_Image_Icon = Passam_Image_Icon.resize((300 , 210))
+    Tk_Passam_Image = ImageTk.PhotoImage(Passam_Image_Icon)
+    Passam_Image_Lable = Label(Window_Add ,image=Tk_Passam_Image )
+    Passam_Image_Lable.place(x=30 , y=160)
+    #---------------------------------------------------
+    #button back 
+    Back_Image = Image.open("back.png")
+    Back_Image = Back_Image.resize((25 , 25))
+    Back_Image = ImageTk.PhotoImage(Back_Image)
+    #define a function to be called when the button is clicked
+    def button_back_clicked():
+        #close window add password and open menu page
+        Window_Add.destroy()
+        Menu()
+    #create the button back with the image
+    Button_Back = Button(Window_Add , image=Back_Image , command=button_back_clicked)
+    Button_Back.pack()
+    Button_Back.place(x=40 , y= 30)
+    #---------------------------------------------------
+    #the frame box items 
+    frame = Frame(Window_Add , bg="#555454" , width=400 , height=350)
+    frame.pack()
+    frame.place(x=370, y=120)
+    #---------------------------------------------------
+    #Enter Platform name Text
+    Text_Platform_Name = Label(frame, text = "Enter Platform Name" ,bg="#555454", fg='white')
+    Text_Platform_Name.pack()
+    Text_Platform_Name.place(x=100, y=5)
+    Text_Platform_Name_Text_Style = ("Comic Sans Ms" , 15 , "bold")
+    Text_Platform_Name.configure(font=Text_Platform_Name_Text_Style)
+    #---------------------------------------------
+    #edit text enter Platform name
+    Platform_Name_Entry = Entry(frame , width=25 )
+    Platform_Name_Entry.pack()
+    Platform_Name_Entry.place(x=65, y=50)
+    Platform_Name_Entry_Text_Style = ('Arial')
+    Platform_Name_Entry.configure(font=Platform_Name_Entry_Text_Style)
+    #---------------------------------------------
+    #Enter Account Username Text
+    Text_Enter_Account = Label(frame, text = "Enter Account Username" ,bg="#555454", fg='white')
+    Text_Enter_Account.pack()
+    Text_Enter_Account.place(x=80, y=95)
+    Text_Enter_Account_Text_Style = ("Comic Sans Ms" , 15 , "bold")
+    Text_Enter_Account.configure(font=Text_Enter_Account_Text_Style)
+    #---------------------------------------------
+    #edit text enter account username 
+    Account_Entry = Entry(frame , width=25 )
+    Account_Entry.pack()
+    Account_Entry.place(x=65, y=140)
+    Account_Entry_Text_Style = ('Arial')
+    Account_Entry.configure(font=Account_Entry_Text_Style)
+    #---------------------------------------------
+    #Enter Account Password Text
+    Text_Enter_Password = Label(frame, text = "Enter Account Password" ,bg="#555454", fg='white')
+    Text_Enter_Password.pack()
+    Text_Enter_Password.place(x=80, y=185)
+    Text_Enter_Password_Text_Style = ("Comic Sans Ms" , 15 , "bold")
+    Text_Enter_Password.configure(font=Text_Enter_Password_Text_Style)
+    #---------------------------------------------
+    #edit text enter account password 
+    Password_Entry = Entry(frame , width=25 )
+    Password_Entry.pack()
+    Password_Entry.place(x=65, y=230)
+    Password_Entry_Text_Style = ('Arial')
+    Password_Entry.configure(font=Password_Entry_Text_Style)
+    #---------------------------------------------
+    def button_save_clicked():
+        #_________________________________________________________
+        #get value edit text
+        Value_Platform_Name_Entry = Platform_Name_Entry.get()
+        Value_Account_Entry = Account_Entry.get()
+        Value_Password_Entry = Password_Entry.get()
+        #_________________________________________________________
+        if Value_Platform_Name_Entry and Value_Account_Entry and Value_Password_Entry != "":
+            result = Value_Platform_Name_Entry + " " + ":" + " " + Value_Account_Entry + " " + "=" + " " + Value_Password_Entry
+            #_________________________________________________________
+            #encrypt user password with fernet
+            All_Password_Encrypt = fernet.encrypt(result.encode()).decode()
+            #create txt file for save user encrypt passwrod
+            File_All_Password = open('All_Password' , 'a')
+            File_All_Password.write(All_Password_Encrypt + "\n")
+            File_All_Password.close()
+            result = ""
+            #_________________________________________________________
+            messagebox.showinfo("Success" , "save info successfully")
+        else:
+            messagebox.showerror("Error" , "please fill filed")
+    #---------------------------------------------
+    #button save password
+    Button_save_password = Button(frame , text="Save" , width=17 , bg= "black", fg = "white" , command=button_save_clicked) 
+    Button_save_password.pack()
+    Button_save_password.place(x=87, y=285)
+    Button_save_passwrod_Text_Style = ("Centaur" , 17 , "bold")
+    Button_save_password.configure(font=Button_save_passwrod_Text_Style)
+    #---------------------------------------------------
+    #start window add
+    Window_Add.mainloop()
+    #---------------------------------------------------
+
+#________________________________End Add Password page gui code_________________________________
+#________________________________View All Password page gui code_________________________________
+def Passwords():
+    #---------------------------------------------------
+    #variable class Tk from tkinter lib
+    Window_Passwords = Tk()
+    #---------------------------------------------------
+    #customize window app
+    Window_Passwords.title("PASSAM (list passwords)")
+    Window_Passwords.config(bg= "#353535")
+    Window_Passwords.geometry("800x500")
+    Window_Passwords.resizable(False , False)
+    Window_Passwords.iconbitmap("iconApp.ico")
+    #---------------------------------------------------
+    #text Add password in header app
+    Text_list_Password = Label(Window_Passwords , text="List Passwords" , bg="#353535" , fg="white" , width=12)
+    Text_list_Password.pack()
+    #Text_Welcome.place(x=220 , y=20)
+    Text_list_Password_Style = ("Caveat" , 50 , "bold")
+    Text_list_Password.configure(font=Text_list_Password_Style)
+    #---------------------------------------------------
+    #image icon app in window
+    #enter your image.ico location with two \\
+    Passam_Image_Icon = Image.open("E:\\project\\PasswordManager\\logo2.jpg")
+    Passam_Image_Icon = Passam_Image_Icon.resize((300 , 210))
+    Tk_Passam_Image = ImageTk.PhotoImage(Passam_Image_Icon)
+    Passam_Image_Lable = Label(Window_Passwords ,image=Tk_Passam_Image )
+    Passam_Image_Lable.place(x=30 , y=160)
+    #---------------------------------------------------
+    #button back 
+    Back_Image = Image.open("back.png")
+    Back_Image = Back_Image.resize((25 , 25))
+    Back_Image = ImageTk.PhotoImage(Back_Image)
+    #define a function to be called when the button is clicked
+    def button_back_clicked():
+        #close window add password and open menu page
+        Window_Passwords.destroy()
+        Menu()
+    #create the button back with the image
+    Button_Back = Button(Window_Passwords , image=Back_Image , command=button_back_clicked)
+    Button_Back.pack()
+    Button_Back.place(x=40 , y= 30)
+    #---------------------------------------------------
+    View_All_Passwords()
+    List_of_Passwords = File_All_Password
+    List_Passwords = Listbox(Window_Passwords , height=13 , width=35 , bg="white" , fg="#04757c")
+    for item in List_of_Passwords :
+        Password_Decrypt = fernet.decrypt(item.encode()).decode()
+        result = str(List_of_Passwords.index(item)) + "-" + " " + Password_Decrypt
+        List_Passwords.insert(END , result)
+        List_Passwords.pack()
+        List_Passwords.place(x=360 , y=115)
+        List_Passwords_Text_Style = ("Centaur" , 17 , "bold")
+        List_Passwords.configure(font = List_Passwords_Text_Style)
+    #---------------------------------------------------
+    #start window 
+    Window_Passwords.mainloop()
+#________________________________End View All Password page gui code_________________________________
+
 #_________________________________End GUI CODE_____________________________
 
 #_________________________________________________________
@@ -280,6 +463,14 @@ def Check_App_Password():
     Load_key_File()
     App_Password_Decrypt = fernet.decrypt(File_App_Password.encode()).decode()
     
+#_________________________________________________________
+def View_All_Passwords():
+    global File_All_Password
+    #read App_Password file for decrypt
+    File_All_Password = open('All_Password' , 'r')
+    File_All_Password = File_All_Password.readlines()
+    #decrypt user password 
+    Load_key_File()
 #_________________________________________________________
 
 
